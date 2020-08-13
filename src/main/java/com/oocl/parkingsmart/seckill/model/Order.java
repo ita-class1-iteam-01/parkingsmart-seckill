@@ -1,5 +1,7 @@
 package com.oocl.parkingsmart.seckill.model;
 
+import java.io.Serializable;
+
 /**
  * @ProjectName: seckill
  * @Package: com.oocl.parkingsmart.seckill.model
@@ -9,7 +11,7 @@ package com.oocl.parkingsmart.seckill.model;
  * @Date: 2020/8/13 11:00 上午
  * @Version:
  */
-public class Order {
+public class Order implements Serializable {
     Integer RentId;
     Integer userId;
 }

@@ -1,0 +1,10 @@
+spring:
+  activemq:
+    broker-url: tcp://10.222.29.148:61616
+    user: ita01-team01
+    in-memory: false
+    password: strongpassword
+    packages:
+      trust-all: true
+server:
+  port: 8020
