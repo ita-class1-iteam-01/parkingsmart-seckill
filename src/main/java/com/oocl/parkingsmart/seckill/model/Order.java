@@ -1,6 +1,7 @@
 package com.oocl.parkingsmart.seckill.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @ProjectName: seckill
@@ -13,8 +14,12 @@ import java.io.Serializable;
  */
 
 public class Order implements Serializable {
-    Integer rentId;
-    Integer userId;
+    private Integer rentId;
+    private Integer userId;
+    private String latitude;
+    private String longitude;
+    private String reservationStartTime;
+    private String reservationEndTime;
 
     public Order(Integer rentId, Integer userId) {
         this.rentId = rentId;
@@ -35,5 +40,37 @@ public class Order implements Serializable {
 
     public void setUserId(Integer userId) {
         this.userId = userId;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    public String getReservationStartTime() {
+        return reservationStartTime;
+    }
+
+    public void setReservationStartTime(String reservationStartTime) {
+        this.reservationStartTime = reservationStartTime;
+    }
+
+    public String getReservationEndTime() {
+        return reservationEndTime;
+    }
+
+    public void setReservationEndTime(String reservationEndTime) {
+        this.reservationEndTime = reservationEndTime;
     }
 }

@@ -2,7 +2,6 @@ package com.oocl.parkingsmart.seckill.controller;
 
 import com.oocl.parkingsmart.seckill.model.Order;
 import com.oocl.parkingsmart.seckill.producer.OrderProducer;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

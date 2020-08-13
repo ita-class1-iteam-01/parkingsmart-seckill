@@ -17,6 +17,7 @@ public class OrderProducer {
     }
 
     public void send(Order order) {
+
         template.convertAndSend(QUEUENAME,gson.toJson(order));
     }
 }
